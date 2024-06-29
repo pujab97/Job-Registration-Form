@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(120deg, #FFEEA9, #FFBF78);
+}
+
+.container {
+    max-width: 600px;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+input:invalid + .invalid-feedback,
+textarea:invalid + .invalid-feedback,
+input[type="file"]:invalid + .invalid-feedback {
+    display: block;
+}
